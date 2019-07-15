@@ -1,2 +1,2 @@
 # camtrap_import
-Importing metadata tags into R using CamtrapR and Exiftool
+Importing metadata tags into R using the package camtrapR and Exiftool
