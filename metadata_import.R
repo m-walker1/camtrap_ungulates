@@ -1,9 +1,12 @@
-library(camtrapR)
-
+#after installing Exiftool windows executable
 #identifying location of Exiftool
 
 exiftool_location <- "C:/Strawberry/exiftool-11.10"
 exiftoolPath(exiftoolDir = exiftool_location)
+
+install.packages('camtrapR')
+library(camtrapR)
+
 
 #some Reconyx Hyperfire cameras need date/time adjusted: 
 
@@ -11,7 +14,6 @@ camtrap_images <- "R:/MT_camtrap_study/images"
 
 fixDateTimeOriginal(inDir = camtrap_images,
                     recursive = TRUE)
-
 
 
 #importing image metadata:
