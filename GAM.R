@@ -1,15 +1,11 @@
 library(mgcv)
 
-
 #example data 
 
 GAM_data <- read.csv("data/GAM_example_data.csv")
 
-
 #each model follows the formulas from the Turner et al. 2014 supplementary 
     #material, with additional model terms for animal sex  
-
-
 
 #GAM for animal visitations:
 
@@ -52,7 +48,6 @@ grazing <- mgcv::gam(cbind(g, n-g) ~ s(sqrt(n)) +
 
 #where g = the number of individuals seen grazing per camera trigger
     #summed daily, per site, per treatment 
-
 
 summary(grazing)
 gam.check(grazing)
